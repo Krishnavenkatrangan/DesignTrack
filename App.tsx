@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { LayoutDashboard, FilePlus, Calendar, ListTodo, BarChart3, Settings, Users, Menu, X } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 import { MOCK_DESIGNERS, MOCK_REQUESTS, MOCK_SHIFTS } from './constants';
 import { DesignRequest, JobStatus, Designer, Feedback } from './types';
 import IntakeForm from './components/IntakeForm';
@@ -203,6 +204,7 @@ const App: React.FC = () => {
 
         </div>
       </main>
+      <Analytics />
     </div>
   );
 };
